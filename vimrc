@@ -9,9 +9,9 @@ set encoding=utf-8
 
 " Whitespace stuff
 set nowrap
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set list listchars=tab:\ \ ,trail:·
 
@@ -125,7 +125,7 @@ set modeline
 set modelines=10
 
 " Default color scheme
-color desert
+color vwilight
 
 " Directories for swp files
 set backupdir=~/.vim/backup
@@ -142,6 +142,10 @@ runtime! macros/matchit.vim
 
 " Show (partial) command in the status line
 set showcmd
+
+" ZenCoding
+let g:user_zen_expandabbr_key = '<c-e>'
+let g:use_zen_complete_tag = 1
 
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
