@@ -13,10 +13,9 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-set list listchars=tab:\ \ ,trail:·
 
 " Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:▸\ ,eol:¬
+set list listchars=tab:▸\ ,eol:¬,trail:·
 
 " Shortcut to rapidly toggle `set list`
 nmap <Leader>l :set list!<CR>
