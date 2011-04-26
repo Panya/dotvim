@@ -145,7 +145,7 @@ vim_plugin_task "zoomwin",          "git://github.com/vim-scripts/ZoomWin.git"
 vim_plugin_task "snipmate",         "git://github.com/msanders/snipmate.vim.git"
 vim_plugin_task "markdown",         "git://github.com/tpope/vim-markdown.git"
 vim_plugin_task "align",            "git://github.com/tsaleh/vim-align.git"
-vim_plugin_task "unimpaired",       "git://github.com/tpope/vim-unimpaired.git"
+vim_plugin_task "delimitMate",      "git://github.com/Raimondi/Raimondi/delimitMate.git"
 vim_plugin_task "searchfold",       "git://github.com/vim-scripts/searchfold.vim.git"
 vim_plugin_task "endwise",          "git://github.com/tpope/vim-endwise.git"
 vim_plugin_task "irblack",          "git://github.com/wgibbs/vim-irblack.git"
@@ -214,6 +214,9 @@ vim_plugin_task "arduino","git://github.com/vim-scripts/Arduino-syntax-file.git"
 end
 vim_plugin_task "vwilight" do
   sh "curl https://gist.github.com/raw/796172/724c7ca237a7f6b8d857c4ac2991cfe5ffb18087/vwilight.vim > colors/vwilight.vim"
+end
+vim_plugin_task "autoclosetag" do
+  sh "curl http://www.vim.org/scripts/download_script.php?src_id=10609 > ftplugin/autoclosetag.vim"
 end
 
 if File.exists?(janus = File.expand_path("~/.janus.rake"))
