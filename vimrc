@@ -1,4 +1,5 @@
 set nocompatible
+set autoread
 
 set number
 set ruler
@@ -6,6 +7,14 @@ syntax on
 
 " Set encoding
 set encoding=utf-8
+set termencoding=utf-8
+set fileencodings=utf-8,cp1251,koi8-r
+
+" Hide menus and other crap
+set hidden
+
+" Don't update the display while executing macros
+set lazyredraw
 
 " Whitespace stuff
 set nowrap
@@ -13,6 +22,14 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set smarttab
+
+" Indentation
+set autoindent
+set smartindent
+
+" Show edit mode
+set showmode
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set list listchars=tab:▸\ ,eol:¬,trail:·
@@ -112,6 +129,7 @@ cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 " Bubble single lines
 nmap <C-Up> [e
 nmap <C-Down> ]e
+
 " Bubble multiple lines
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
