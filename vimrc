@@ -186,7 +186,7 @@ vmap <D-]> >gv
 " delimitMate indentation
 let delimitMate_expand_cr = 1
 
-function! NewlineInTag()
+function! SmartIndent()
     if delimitMate#WithinEmptyPair()
         return "\<CR>\<ESC>\<UP>$o"
     else
@@ -194,7 +194,7 @@ function! NewlineInTag()
     endif
 endfunction
 
-imap <CR> <C-R>=NewlineInTag()<CR>
+imap <CR> <C-R>=SmartIndent()<CR>
 
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
