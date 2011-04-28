@@ -183,6 +183,19 @@ nmap <D-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
 
+" delimitMate indentation
+let delimitMate_expand_cr = 1
+
+function! NewlineInTag()
+    if delimitMate#WithinEmptyPair()
+        return "\<CR>\<ESC>\<UP>$o"
+    else
+        return "\<CR>"
+    endif
+endfunction
+
+imap <CR> <C-R>=NewlineInTag()<CR>
+
 " Include user's local vim config
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
