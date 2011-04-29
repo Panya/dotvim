@@ -1,9 +1,14 @@
 set nocompatible
 set autoread
+set nobackup
+set noswapfile
 
 set number
 set ruler
+set cursorline
+
 syntax on
+set foldmethod=syntax
 
 " Set encoding
 set encoding=utf-8
