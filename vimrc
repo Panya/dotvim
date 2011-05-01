@@ -8,7 +8,6 @@ set ruler
 set cursorline
 
 syntax on
-set foldmethod=syntax
 
 " Set encoding
 set encoding=utf-8
