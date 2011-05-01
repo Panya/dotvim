@@ -153,6 +153,12 @@ vim_plugin_task "syntastic",        "git://github.com/scrooloose/syntastic.git"
 vim_plugin_task "gist-vim",         "git://github.com/mattn/gist-vim.git"
 vim_plugin_task "zencoding", "git://github.com/mattn/zencoding-vim.git"
 
+vim_plugin_task "snipMate snippets" do
+  %w[ css html xslt ].each do |name|
+    sh "curl https://github.com/Panya/snipmate-snippets/raw/master/#{name}.snippets > snippets/#{name}.snippets"
+  end
+end
+
 vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
   sh "find ruby -name '.gitignore' | xargs rm"
   Dir.chdir "ruby/command-t" do
