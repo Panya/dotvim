@@ -46,7 +46,7 @@ highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
 " Highlight color in visual mode
-highlight Visual guibg=#414547 ctermbg=yellow
+highlight Visual guibg=#414547
 
 " Searching
 set hlsearch
