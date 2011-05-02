@@ -224,6 +224,9 @@ call s:DefineCommand("rm", "Remove")
 call s:DefineCommand("e", "Edit")
 call s:DefineCommand("mkdir", "Mkdir")
 
+" Highlight color in visual mode
+highlight Visual guibg=#414547
+
 " Include user's local vim config
 if filereadable(expand("~/.gvimrc.local"))
   source ~/.gvimrc.local
