@@ -3,6 +3,7 @@ set autoread
 set nobackup
 set noswapfile
 
+set t_Co=256
 set number
 set ruler
 
@@ -159,10 +160,6 @@ set modelines=10
 
 " Default color scheme
 color vwilight
-
-" Directories for swp files
-set backupdir=~/.vim/backup
-set directory=~/.vim/backup
 
 " Turn off jslint errors by default
 let g:JSLintHighlightErrorLine = 0
