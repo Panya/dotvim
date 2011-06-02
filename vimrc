@@ -5,7 +5,6 @@ set noswapfile
 
 set number
 set ruler
-set cursorline
 
 syntax on
 
