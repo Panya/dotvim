@@ -1,4 +1,6 @@
 if has("gui_macvim")
+  set guifont=Monaco:h12
+
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
 
