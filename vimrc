@@ -4,7 +4,6 @@ set nobackup
 set noswapfile
 
 if &t_Co > 2 || has("gui_running")
-    set t_Co=256
     syntax on
 endif
 
