@@ -3,11 +3,13 @@ set autoread
 set nobackup
 set noswapfile
 
-set t_Co=256
+if &t_Co > 2 || has("gui_running")
+    set t_Co=256
+    syntax on
+endif
+
 set number
 set ruler
-
-syntax on
 
 " Set encoding
 set encoding=utf-8
