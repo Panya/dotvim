@@ -71,7 +71,7 @@ set visualbell
 set guioptions-=T
 
 " Default gui color scheme
-color vwilight
+color twilight
 
 " ConqueTerm wrapper
 function StartTerm()

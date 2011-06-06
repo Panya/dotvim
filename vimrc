@@ -163,7 +163,7 @@ set modeline
 set modelines=10
 
 " Default color scheme
-color vwilight
+color twilight
 
 " Turn off jslint errors by default
 let g:JSLintHighlightErrorLine = 0
