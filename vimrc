@@ -5,6 +5,7 @@ set noswapfile
 
 if &t_Co > 2 || has("gui_running")
     syntax on
+    set t_Co=256
 endif
 
 set number
@@ -163,7 +164,7 @@ set modeline
 set modelines=10
 
 " Default color scheme
-color vwilight
+color lucius
 
 " Turn off jslint errors by default
 let g:JSLintHighlightErrorLine = 0
