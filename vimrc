@@ -146,6 +146,32 @@ nmap <C-Down> ]e
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
 
+" Leader-c to toggle comments
+map <Leader>c <plug>NERDCommenterToggle<CR>
+imap <Leader>c <Esc><plug>NERDCommenterToggle<CR>i
+
+" Map Leader-# to switch tabs
+map  <Leader>0 0gt
+imap <Leader>0 <Esc>0gt
+map  <Leader>1 1gt
+imap <Leader>1 <Esc>1gt
+map  <Leader>2 2gt
+imap <Leader>2 <Esc>2gt
+map  <Leader>3 3gt
+imap <Leader>3 <Esc>3gt
+map  <Leader>4 4gt
+imap <Leader>4 <Esc>4gt
+map  <Leader>5 5gt
+imap <Leader>5 <Esc>5gt
+map  <Leader>6 6gt
+imap <Leader>6 <Esc>6gt
+map  <Leader>7 7gt
+imap <Leader>7 <Esc>7gt
+map  <Leader>8 8gt
+imap <Leader>8 <Esc>8gt
+map  <Leader>9 9gt
+imap <Leader>9 <Esc>9gt
+
 " Enable syntastic syntax checking
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_warnings=1
