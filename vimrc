@@ -151,8 +151,7 @@ map <Leader>c <plug>NERDCommenterToggle<CR>
 imap <Leader>c <Esc><plug>NERDCommenterToggle<CR>i
 
 " Leader-t to FuzzyFinder
-map <Leader>t <plug>FufFile<CR>
-imap <Leader>t <Esc><plug>FufFile<CR>i
+map <Leader>t :FufFile<CR>
 
 " Map Leader-# to switch tabs
 map  <Leader>0 0gt
