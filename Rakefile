@@ -121,6 +121,8 @@ def vim_plugin_task(name, repo=nil)
 end
 
 vim_plugin_task "ack.vim",          "git://github.com/mileszs/ack.vim.git"
+vim_plugin_task "L9"                "git://github.com/vim-scripts/L9"
+vim_plugin_task "fuzzyfinder"       "git://github.com/vim-scripts/FuzzyFinder.git"
 vim_plugin_task "color-sampler",    "git://github.com/vim-scripts/Color-Sampler-Pack.git"
 vim_plugin_task "conque",           "http://conque.googlecode.com/files/conque_1.1.tar.gz"
 vim_plugin_task "fugitive",         "git://github.com/tpope/vim-fugitive.git"
@@ -156,20 +158,6 @@ vim_plugin_task "zencoding", "git://github.com/mattn/zencoding-vim.git"
 vim_plugin_task "snipMate snippets" do
   %w[ css html xslt ].each do |name|
     sh "curl https://github.com/Panya/snipmate-snippets/raw/master/#{name}.snippets > snippets/#{name}.snippets"
-  end
-end
-
-vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
-  sh "find ruby -name '.gitignore' | xargs rm"
-  Dir.chdir "ruby/command-t" do
-    if File.exists?("/usr/bin/ruby1.8") # prefer 1.8 on *.deb systems
-      sh "/usr/bin/ruby1.8 extconf.rb"
-    elsif File.exists?("/usr/bin/ruby") # prefer system rubies
-      sh "/usr/bin/ruby extconf.rb"
-    elsif `rvm > /dev/null 2>&1` && $?.exitstatus == 0
-      sh "rvm system ruby extconf.rb"
-    end
-    sh "make clean && make"
   end
 end
 

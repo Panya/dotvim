@@ -150,6 +150,10 @@ vmap <C-Down> ]egv
 map <Leader>c <plug>NERDCommenterToggle<CR>
 imap <Leader>c <Esc><plug>NERDCommenterToggle<CR>i
 
+" Leader-t to FuzzyFinder
+map <Leader>t <plug>FufFile<CR>
+imap <Leader>t <Esc><plug>FufFile<CR>i
+
 " Map Leader-# to switch tabs
 map  <Leader>0 0gt
 imap <Leader>0 <Esc>0gt
