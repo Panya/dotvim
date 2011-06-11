@@ -121,8 +121,8 @@ def vim_plugin_task(name, repo=nil)
 end
 
 vim_plugin_task "ack.vim",          "git://github.com/mileszs/ack.vim.git"
-vim_plugin_task "L9"                "git://github.com/vim-scripts/L9.git"
-vim_plugin_task "FuzzyFinder"       "git://github.com/vim-scripts/FuzzyFinder.git"
+vim_plugin_task "L9",               "git://github.com/vim-scripts/L9.git"
+vim_plugin_task "FuzzyFinder",      "git://github.com/vim-scripts/FuzzyFinder.git"
 vim_plugin_task "color-sampler",    "git://github.com/vim-scripts/Color-Sampler-Pack.git"
 vim_plugin_task "conque",           "http://conque.googlecode.com/files/conque_1.1.tar.gz"
 vim_plugin_task "fugitive",         "git://github.com/tpope/vim-fugitive.git"
