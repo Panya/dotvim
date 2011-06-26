@@ -33,6 +33,7 @@ set smarttab
 " Indentation
 set autoindent
 set smartindent
+set copyindent
 
 " Show edit mode
 set showmode
