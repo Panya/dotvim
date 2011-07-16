@@ -209,9 +209,6 @@ runtime! macros/matchit.vim
 " Show (partial) command in the status line
 set showcmd
 
-" AutoCloseTag
-au FileType html,xhtml,xml ru ftplugin/autoclosetag.vim
-
 " ZenCoding
 let g:user_zen_expandabbr_key = '<c-e>'
 let g:use_zen_complete_tag = 1

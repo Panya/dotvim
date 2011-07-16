@@ -154,6 +154,7 @@ vim_plugin_task "vim-coffee-script","git://github.com/kchmck/vim-coffee-script.g
 vim_plugin_task "syntastic",        "git://github.com/scrooloose/syntastic.git"
 vim_plugin_task "gist-vim",         "git://github.com/mattn/gist-vim.git"
 vim_plugin_task "zencoding", "git://github.com/mattn/zencoding-vim.git"
+vim_plugin_task "ragtag", "git://github.com/tpope/vim-ragtag.git"
 
 vim_plugin_task "snipMate snippets" do
   %w[ css html xslt ].each do |name|
@@ -210,9 +211,6 @@ vim_plugin_task "arduino","git://github.com/vim-scripts/Arduino-syntax-file.git"
 end
 vim_plugin_task "vwilight" do
   sh "curl https://gist.github.com/raw/796172/724c7ca237a7f6b8d857c4ac2991cfe5ffb18087/vwilight.vim > colors/vwilight.vim"
-end
-vim_plugin_task "autoclosetag" do
-  sh "curl http://www.vim.org/scripts/download_script.php?src_id=10609 > ftplugin/autoclosetag.vim"
 end
 
 if File.exists?(janus = File.expand_path("~/.janus.rake"))
