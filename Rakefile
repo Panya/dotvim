@@ -194,10 +194,6 @@ vim_plugin_task "molokai" do
   sh "curl https://raw.github.com/vim-scripts/molokai/master/colors/molokai.vim > colors/molokai.vim"
 end
 
-vim_plugin_task "af" do
-  sh "curl http://www.vim.org/scripts/download_script.php?src_id=2900 > colors/af.vim"
-end
-
 vim_plugin_task "mustache" do
   sh "curl https://github.com/defunkt/mustache/raw/master/contrib/mustache.vim > syntax/mustache.vim"
   File.open(File.expand_path('../ftdetect/mustache.vim', __FILE__), 'w') do |file|
