@@ -10,6 +10,7 @@ endif
 
 set number
 set ruler
+set cursorline
 
 " Set encoding
 set encoding=utf-8
@@ -56,10 +57,17 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+nnoremap / /\v
+vnoremap / /\v
+nnoremap <leader><space> :noh<cr>
 
 " Tab completion
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
+
+" Scrolling
+set scrolloff=3
+set ttyfast
 
 " Status bar
 set laststatus=2
@@ -85,6 +93,9 @@ map <Leader><Leader> :ZoomWin<CR>
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>
+
+" Clear trailing whitespaces
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Remember last location in file
 if has("autocmd")
@@ -119,6 +130,9 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
+
+" save on losing focus
+au FocusLost * :wa
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
