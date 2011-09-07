@@ -10,6 +10,7 @@ endif
 
 set number
 set ruler
+set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
 set cursorline
 
 " Set encoding
@@ -42,6 +43,9 @@ set showmode
 " Use the same symbols as TextMate for tabstops and EOLs
 set list listchars=tab:▸\ ,eol:¬,trail:·
 
+" Don't continue coments on new line
+set formatoptions-=o
+
 " Shortcut to rapidly toggle `set list`
 nmap <Leader>l :set list!<CR>
 
@@ -57,6 +61,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set gdefault
 nnoremap / /\v
 vnoremap / /\v
 nnoremap <leader><space> :noh<cr>
@@ -71,11 +76,32 @@ set ttyfast
 
 " Status bar
 set laststatus=2
+set statusline=\ %{HasPaste()}%<%-15.25(%f%)%m%r%h\ %w\ \ 
+set statusline+=\ \ \ [%{&ff}/%Y]%=file=%{&fileencoding}\ enc=%{&encoding}\ 
+set statusline+=\ \ \ %<%20.30(%{hostname()}:%{CurDir()}%)\ 
+set statusline+=\ \ \ %=%-10.(%l,%c%V%)\ %p%%/%L
+
+fun! CurDir()
+    let curdir = substitute(getcwd(), $HOME, "~", "")
+    return curdir
+endfunction
+
+fun! HasPaste()
+    if &paste
+        return '[PASTE]'
+    else
+        return ''
+    endif
+endfunction
 
 " Without setting this, ZoomWin restores windows in a way that causes
 " equalalways behavior to be triggered the next time CommandT is used.
 " This is likely a bludgeon to solve some other issue, but it works
 set noequalalways
+
+" No bell sound
+set novisualbell
+set t_vb=
 
 " Remapping mapleader
 let mapleader=','
@@ -96,6 +122,10 @@ map <C-\> :tnext<CR>
 
 " Clear trailing whitespaces
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+
+" Pasting
+nmap ]p p=`]
+nmap ]P P=`[
 
 " Remember last location in file
 if has("autocmd")
