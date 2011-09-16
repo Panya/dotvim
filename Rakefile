@@ -151,19 +151,19 @@ vim_plugin_task "ragtag", "git://github.com/tpope/vim-ragtag.git"
 
 vim_plugin_task "snipMate snippets" do
   %w[ css html xslt ].each do |name|
-    sh "curl https://github.com/Panya/snipmate-snippets/raw/master/#{name}.snippets > snippets/#{name}.snippets"
+    sh "curl https://raw.github.com/Panya/snipmate-snippets/master/#{name}.snippets > snippets/#{name}.snippets"
   end
 end
 
 vim_plugin_task "mustache" do
-  sh "curl https://github.com/defunkt/mustache/raw/master/contrib/mustache.vim > syntax/mustache.vim"
+  sh "curl https://raw.github.com/defunkt/mustache/master/contrib/mustache.vim > syntax/mustache.vim"
   File.open(File.expand_path('../ftdetect/mustache.vim', __FILE__), 'w') do |file|
     file << "au BufNewFile,BufRead *.mustache        setf mustache"
   end
 end
 
 vim_plugin_task "vwilight" do
-  sh "curl https://gist.github.com/raw/796172/724c7ca237a7f6b8d857c4ac2991cfe5ffb18087/vwilight.vim > colors/vwilight.vim"
+  sh "curl https://raw.github.com/gist/796172/724c7ca237a7f6b8d857c4ac2991cfe5ffb18087/vwilight.vim > colors/vwilight.vim"
 end
 
 if File.exists?(janus = File.expand_path("~/.janus.rake"))
