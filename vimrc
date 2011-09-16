@@ -244,9 +244,6 @@ set modelines=10
 " Default color scheme
 color lucius
 
-" Turn off jslint errors by default
-let g:JSLintHighlightErrorLine = 0
-
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 let macvim_hig_shift_movement = 1
 
