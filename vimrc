@@ -18,7 +18,7 @@ set encoding=utf-8
 set termencoding=utf-8
 set fileencodings=utf-8,cp1251,koi8-r
 
-" Hide menus and other crap
+" Hide buffers
 set hidden
 
 " Don't update the display while executing macros
@@ -110,8 +110,11 @@ let mapleader=','
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
 
-" Command-T configuration
-let g:CommandTMaxHeight=20
+" CtrlP configuration
+let g:ctrlp_persistent_input=0
+let g:ctrlp_split_window=1
+let g:ctrlp_working_path_mode=2
+let g:ctrlp_max_height=5
 
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
@@ -195,9 +198,9 @@ vmap <C-Down> ]egv
 map <Leader>c <plug>NERDCommenterToggle<CR>
 imap <Leader>c <Esc><plug>NERDCommenterToggle<CR>i
 
-" Leader-t and Leader-tb to FuzzyFinderFile and FuzzyFinderBuffer
-map <Leader>t :FufFile<CR>
-map <Leader>tb :FufBuffer<CR>
+" Leader-t to CtrlP and Leader-tb to CtrlP buffers mode
+map <Leader>t :CtrlP<CR>
+map <Leader>tb :CtrlPBuffer<CR>
 
 " Map Leader-# to switch tabs
 map  <Leader>0 0gt

@@ -4,10 +4,10 @@ if has("gui_macvim")
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
 
-  " Command-T for FuzzyFinder
+  " Command-T for CtrlP
   macmenu &File.New\ Tab key=<D-T>
-  map <D-t> :FufFile<CR>
-  imap <D-t> <Esc>:FufFile<CR>
+  map <D-t> :CtrlP<CR>
+  imap <D-t> <Esc>:CtrlP<CR>
 
   " Command-Return for fullscreen
   macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
@@ -139,10 +139,6 @@ function s:UpdateNERDTree(...)
         wincmd p
       end
     endif
-  endif
-
-  if exists(":CommandTFlush") == 2
-    CommandTFlush
   endif
 endfunction
 
