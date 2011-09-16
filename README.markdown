@@ -44,7 +44,7 @@ support.
 
 or
 
-  `curl https://github.com/Panya/janus/raw/master/bootstrap.sh -o - | sh`
+  `curl https://raw.github.com/Panya/janus/master/bootstrap.sh -o - | sh`
 
 ## Customization
 
