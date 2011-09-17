@@ -64,7 +64,7 @@ set smartcase
 set gdefault
 nnoremap / /\v
 vnoremap / /\v
-nnoremap <leader><space> :noh<cr>
+nnoremap <silent><space> :noh<CR>
 
 " Tab completion
 set wildmode=list:longest,list:full
