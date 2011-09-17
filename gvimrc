@@ -68,7 +68,7 @@ set visualbell
 set guioptions-=T
 
 " Default gui color scheme
-color vwilight
+color twilight
 
 " Project Tree
 autocmd VimEnter * call s:CdIfDirectory(expand("<amatch>"))
