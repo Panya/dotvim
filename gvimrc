@@ -15,9 +15,6 @@ if has("gui_macvim")
   " Command-Shift-F for Ack
   map <D-F> :Ack<space>
 
-  " Command-e for ConqueTerm
-  map <D-e> :call StartTerm()<CR>
-
   " Command-/ to toggle comments
   map <D-/> <plug>NERDCommenterToggle<CR>
   imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
@@ -72,12 +69,6 @@ set guioptions-=T
 
 " Default gui color scheme
 color vwilight
-
-" ConqueTerm wrapper
-function StartTerm()
-  execute 'ConqueTerm ' . $SHELL . ' --login'
-  setlocal listchars=tab:\ \ 
-endfunction
 
 " Project Tree
 autocmd VimEnter * call s:CdIfDirectory(expand("<amatch>"))
