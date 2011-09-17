@@ -120,7 +120,7 @@ def vim_plugin_task(name, repo=nil)
   task :default => name
 end
 
-vim_plugin_task "ack.vim",          "git://github.com/mileszs/ack.vim.git"
+vim_plugin_task "git-grep.vim",     "git://github.com/tjennings/git-grep-vim.git"
 vim_plugin_task "CtrlP",            "git://github.com/kien/ctrlp.vim.git"
 vim_plugin_task "color-sampler",    "git://github.com/vim-scripts/Color-Sampler-Pack.git"
 vim_plugin_task "fugitive",         "git://github.com/tpope/vim-fugitive.git"
