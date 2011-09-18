@@ -62,8 +62,7 @@ set incsearch
 set ignorecase
 set smartcase
 set gdefault
-nnoremap / /\v
-vnoremap / /\v
+set magic
 nnoremap <silent><space> :noh<CR>
 
 " Tab completion
