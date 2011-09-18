@@ -37,6 +37,9 @@ set autoindent
 set smartindent
 set copyindent
 
+" Set folding off
+set nofoldenable
+
 " Show edit mode
 set showmode
 
