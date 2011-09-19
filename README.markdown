@@ -31,8 +31,10 @@ Here's some tips if you've never used VIM before:
 ## Useful commands
 
 * Use `:q` to exit vim
-* Certain commands are prefixed with a `<Leader>` key, which maps to `\`
-  by default. Use `let mapleader = ","` to change this.
+* `,W` to remove trail whitespaces
+* `,c` to comment/uncomment
+* `,t` to CtrlP (like TextMate Command-T)
+* ',g' to grep in git project
 * Keyboard [cheat sheet](http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png).
 
 ## Installed plugins
