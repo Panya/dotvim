@@ -132,7 +132,6 @@ vim_plugin_task "nerdcommenter",    "git://github.com/ddollar/nerdcommenter.git"
 vim_plugin_task "surround",         "git://github.com/tpope/vim-surround.git"
 vim_plugin_task "repeat",           "git://github.com/tpope/vim-repeat.git"
 vim_plugin_task "matchit",          "git://github.com/mirell/vim-matchit.git"
-vim_plugin_task "taglist",          "git://github.com/vim-scripts/taglist.vim.git"
 vim_plugin_task "supertab",         "git://github.com/ervandew/supertab.git"
 vim_plugin_task "zoomwin",          "git://github.com/vim-scripts/ZoomWin.git"
 vim_plugin_task "snipmate",         "git://github.com/msanders/snipmate.vim.git"
@@ -144,8 +143,8 @@ vim_plugin_task "searchfold",       "git://github.com/vim-scripts/searchfold.vim
 vim_plugin_task "vim-coffee-script","git://github.com/kchmck/vim-coffee-script.git"
 vim_plugin_task "syntastic",        "git://github.com/scrooloose/syntastic.git"
 vim_plugin_task "gist-vim",         "git://github.com/mattn/gist-vim.git"
-vim_plugin_task "zencoding", "git://github.com/mattn/zencoding-vim.git"
-vim_plugin_task "ragtag", "git://github.com/tpope/vim-ragtag.git"
+vim_plugin_task "zencoding",        "git://github.com/mattn/zencoding-vim.git"
+vim_plugin_task "xml.vim",          "git://github.com/othree/xml.vim.git"
 
 vim_plugin_task "snipMate snippets" do
   %w[ css html xslt ].each do |name|

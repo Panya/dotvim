@@ -121,10 +121,6 @@ let g:ctrlp_max_height=5
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
 
-" CTags
-map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
-map <C-\> :tnext<CR>
-
 " GitGrep
 map <Leader>g :GitGrep<space>
 
@@ -228,6 +224,12 @@ map  <Leader>8 8gt
 imap <Leader>8 <Esc>8gt
 map  <Leader>9 9gt
 imap <Leader>9 <Esc>9gt
+
+" C-w k --> C-k etc.
+nmap <silent> <C-k> :wincmd k<CR>
+nmap <silent> <C-j> :wincmd j<CR>
+nmap <silent> <C-h> :wincmd h<CR>
+nmap <silent> <C-l> :wincmd l<CR>
 
 " Enable syntastic syntax checking
 let g:syntastic_enable_signs=1
