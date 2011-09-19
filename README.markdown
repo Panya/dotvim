@@ -34,7 +34,7 @@ Here's some tips if you've never used VIM before:
 * `,W` to remove trail whitespaces
 * `,c` to comment/uncomment
 * `,t` to CtrlP (like TextMate Command-T)
-* ',g' to grep in git project
+* `,g` to grep in git project
 * Keyboard [cheat sheet](http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png).
 
 ## Installed plugins
