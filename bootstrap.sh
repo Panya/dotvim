@@ -19,3 +19,6 @@ for i in css html xslt; do curl -so $VIM_DIR/snippets/$i.snippets https://raw.gi
 
 # Add links to vimrc and gvimrc
 for i in vimrc gvimrc; do ln -s $VIM_DIR/$i ~/.$i; done
+
+# Cleanup
+git clean -fd
