@@ -3,6 +3,10 @@ set autoread
 set nobackup
 set noswapfile
 
+" Pathogen init
+call pathogen#infect()
+call pathogen#helptags()
+
 if &t_Co > 2 || has("gui_running")
     syntax on
     set t_Co=256
