@@ -8,8 +8,7 @@ Now on Pathogen.
 
 ## Updating to the latest version
 
-To update to the latest version of the distribution, just run `git pull --rebase; git submodule update`
-again inside your `~/.vim` directory.
+To update to the latest version of the distribution, just run `git pull --rebase; git submodule update` inside your `~/.vim` directory.
 
 # Intro to VIM
 
