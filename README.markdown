@@ -55,7 +55,6 @@ Here's some tips if you've never used VIM before:
 * [align](https://github.com/tsaleh/vim-align)
 * [unimpaired](https://github.com/tpope/vim-unimpaired)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
-* [searchfold](https://github.com/vim-scripts/searchfold.vim)
 * [syntastic](https://github.com/scrooloose/syntastic)
 * [gist](https://github.com/mattn/gist-vim)
 * [zencoding](https://github.com/mattn/zencoding-vim)
