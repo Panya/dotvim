@@ -19,10 +19,11 @@ if has("gui_macvim")
   map <D-/> <plug>NERDCommenterToggle<CR>
   imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
 
-
-  " Command-][ to increase/decrease indentation
-  vmap <D-]> >gv
+  " TextMate style identation
+  nmap <D-[> <<
+  nmap <D-]> >>
   vmap <D-[> <gv
+  vmap <D-]> >gv
 
   " Map Command-# to switch tabs
   map  <D-0> 0gt

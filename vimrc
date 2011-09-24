@@ -268,12 +268,6 @@ set showcmd
 let g:user_zen_expandabbr_key = '<c-e>'
 let g:use_zen_complete_tag = 1
 
-" TextMate style identation
-nmap <D-[> <<
-nmap <D-]> >>
-vmap <D-[> <gv
-vmap <D-]> >gv
-
 " delimitMate indentation
 let delimitMate_expand_cr = 1
 
