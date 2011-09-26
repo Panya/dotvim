@@ -135,6 +135,7 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 " Pasting
 nmap ]p p=`]
 nmap ]P P=`[
+nmap <leader>p :set invpaste<CR>
 
 " Remember last location in file
 if has("autocmd")
