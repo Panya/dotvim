@@ -53,9 +53,6 @@ set list listchars=tab:▸\ ,eol:¬,trail:·
 " Don't continue coments on new line
 set formatoptions-=o
 
-" Shortcut to rapidly toggle `set list`
-nmap <Leader>l :set list!<CR>
-
 " Invisible character colors
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
@@ -108,6 +105,10 @@ set noequalalways
 " No bell sound
 set novisualbell
 set t_vb=
+
+" Split windows
+set splitbelow
+set splitright
 
 " Remapping mapleader
 let mapleader=','
@@ -225,11 +226,14 @@ imap <Leader>8 <Esc>8gt
 map  <Leader>9 9gt
 imap <Leader>9 <Esc>9gt
 
-" C-w k --> C-k etc.
-nmap <silent> <C-k> :wincmd k<CR>
-nmap <silent> <C-j> :wincmd j<CR>
-nmap <silent> <C-h> :wincmd h<CR>
-nmap <silent> <C-l> :wincmd l<CR>
+" C-w k --> ,k etc.
+nmap <silent> <Leader>k :wincmd k<CR>
+nmap <silent> <Leader>j :wincmd j<CR>
+nmap <silent> <Leader>l :wincmd l<CR>
+nmap <silent> <Leader>h :wincmd h<CR>
+
+" gf in new tab
+nnoremap gf <c-w>gf
 
 " Enable syntastic syntax checking
 let g:syntastic_enable_signs=1
