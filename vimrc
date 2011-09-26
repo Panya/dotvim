@@ -199,10 +199,6 @@ nmap <C-Down> ]e
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
 
-" Leader-c to toggle comments
-map <Leader>c <plug>NERDCommenterToggle<CR>
-imap <Leader>c <Esc><plug>NERDCommenterToggle<CR>i
-
 " Leader-t to CtrlP and Leader-tb to CtrlP buffers mode
 map <Leader>t :CtrlP<CR>
 map <Leader>tb :CtrlPBuffer<CR>

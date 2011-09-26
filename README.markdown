@@ -32,7 +32,7 @@ Here's some tips if you've never used VIM before:
 
 * Use `:q` to exit vim
 * `,W` to remove trail whitespaces
-* `,c` to comment/uncomment
+* `gcc` to comment/uncomment
 * `,t` to CtrlP (like TextMate Command-T)
 * `,g` to grep in git project
 * Keyboard [cheat sheet](http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png).
@@ -45,7 +45,7 @@ Here's some tips if you've never used VIM before:
 * [fugitive](https://github.com/tpope/vim-fugitive)
 * [git](https://github.com/tpope/vim-git)
 * [NerdTree](https://github.com/wycats/nerdtree)
-* [NerdCommenter](https://github.com/ddollar/nerdcommenter)
+* [TComment](https://github.com/vim-scripts/tComment)
 * [surround](https://github.com/tpope/vim-surround)
 * [repeat](https://github.com/tpope/vim-repeat)
 * [MatchIt](https://github.com/mirell/vim-matchit)

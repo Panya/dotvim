@@ -16,8 +16,8 @@ if has("gui_macvim")
   map <D-F> :GitGrep<space>
 
   " Command-/ to toggle comments
-  map <D-/> <plug>NERDCommenterToggle<CR>
-  imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
+  map <D-/> :TComment<CR>
+  imap <D-/> <Esc>:TComment<CR>i
 
   " TextMate style identation
   nmap <D-[> <<
