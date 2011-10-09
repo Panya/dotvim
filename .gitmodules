@@ -70,6 +70,3 @@
 [submodule "bundle/tcomment"]
 	path = bundle/tcomment
 	url = git://github.com/vim-scripts/tComment.git
-[submodule "bundle/snippets"]
-	path = bundle/snippets
-	url = git://github.com/Panya/snipmate-snippets.git
