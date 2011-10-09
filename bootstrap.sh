@@ -13,10 +13,6 @@ mkdir -p $VIM_DIR/autoload; curl -so $VIM_DIR/autoload/pathogen.vim https://raw.
 cd $VIM_DIR
 git submodule init; git submodule update
 
-# Copy my snippets
-mkdir -p $VIM_DIR/snippets
-for i in css html xslt; do curl -so $VIM_DIR/snippets/$i.snippets https://raw.github.com/Panya/snipmate-snippets/master/$i.snippets; done
-
 # Add links to vimrc and gvimrc
 for i in vimrc gvimrc; do ln -s $VIM_DIR/$i ~/.$i; done
 
