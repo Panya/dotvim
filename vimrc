@@ -236,6 +236,9 @@ nmap <silent> <Leader>h :wincmd h<CR>
 " gf in new tab
 nnoremap gf <c-w>gf
 
+" be consistent with capitalized C and D commands which reach the end of line
+nnoremap Y y$
+
 " Enable syntastic syntax checking
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_warnings=1
