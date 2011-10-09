@@ -4,7 +4,7 @@ Now on Pathogen.
 
 ## Installation
 
-`curl https://raw.github.com/Panya/janus/pathogen/bootstrap.sh -o - | sh`
+`curl https://raw.github.com/Panya/dotvim/pathogen/bootstrap.sh -o - | sh`
 
 ## Updating to the latest version
 
