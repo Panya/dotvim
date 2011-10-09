@@ -3,6 +3,10 @@ set autoread
 set nobackup
 set noswapfile
 
+" Pathogen init
+call pathogen#infect()
+call pathogen#helptags()
+
 if &t_Co > 2 || has("gui_running")
     syntax on
     set t_Co=256
@@ -48,9 +52,6 @@ set list listchars=tab:▸\ ,eol:¬,trail:·
 
 " Don't continue coments on new line
 set formatoptions-=o
-
-" Shortcut to rapidly toggle `set list`
-nmap <Leader>l :set list!<CR>
 
 " Invisible character colors
 highlight NonText guifg=#4a4a59
@@ -105,6 +106,10 @@ set noequalalways
 set novisualbell
 set t_vb=
 
+" Split windows
+set splitbelow
+set splitright
+
 " Remapping mapleader
 let mapleader=','
 
@@ -130,6 +135,7 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 " Pasting
 nmap ]p p=`]
 nmap ]P P=`[
+nmap <leader>p :set invpaste<CR>
 
 " Remember last location in file
 if has("autocmd")
@@ -195,10 +201,6 @@ nmap <C-Down> ]e
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
 
-" Leader-c to toggle comments
-map <Leader>c <plug>NERDCommenterToggle<CR>
-imap <Leader>c <Esc><plug>NERDCommenterToggle<CR>i
-
 " Leader-t to CtrlP and Leader-tb to CtrlP buffers mode
 map <Leader>t :CtrlP<CR>
 map <Leader>tb :CtrlPBuffer<CR>
@@ -225,11 +227,14 @@ imap <Leader>8 <Esc>8gt
 map  <Leader>9 9gt
 imap <Leader>9 <Esc>9gt
 
-" C-w k --> C-k etc.
-nmap <silent> <C-k> :wincmd k<CR>
-nmap <silent> <C-j> :wincmd j<CR>
-nmap <silent> <C-h> :wincmd h<CR>
-nmap <silent> <C-l> :wincmd l<CR>
+" C-w k --> ,k etc.
+nmap <silent> <Leader>k :wincmd k<CR>
+nmap <silent> <Leader>j :wincmd j<CR>
+nmap <silent> <Leader>l :wincmd l<CR>
+nmap <silent> <Leader>h :wincmd h<CR>
+
+" gf in new tab
+nnoremap gf <c-w>gf
 
 " Enable syntastic syntax checking
 let g:syntastic_enable_signs=1
@@ -263,12 +268,6 @@ set showcmd
 " ZenCoding
 let g:user_zen_expandabbr_key = '<c-e>'
 let g:use_zen_complete_tag = 1
-
-" TextMate style identation
-nmap <D-[> <<
-nmap <D-]> >>
-vmap <D-[> <gv
-vmap <D-]> >gv
 
 " delimitMate indentation
 let delimitMate_expand_cr = 1
