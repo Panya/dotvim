@@ -257,7 +257,7 @@ set modeline
 set modelines=10
 
 " Default color scheme
-color lucius
+color jellybeans
 
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 let macvim_hig_shift_movement = 1
