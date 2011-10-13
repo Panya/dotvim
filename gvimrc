@@ -62,14 +62,8 @@ if has("gui_macvim")
   imap <Leader>= <Esc> <C-w>=
 endif
 
-" Don't beep
-set visualbell
-
 " Start without the toolbar
 set guioptions-=T
-
-" Default gui color scheme
-color jellybeans
 
 " Project Tree
 autocmd VimEnter * call s:CdIfDirectory(expand("<amatch>"))
@@ -213,9 +207,6 @@ call s:DefineCommand("touch", "Touch")
 call s:DefineCommand("rm", "Remove")
 call s:DefineCommand("e", "Edit")
 call s:DefineCommand("mkdir", "Mkdir")
-
-" Highlight color in visual mode
-highlight Visual guibg=#414547
 
 " Include user's local vim config
 if filereadable(expand("~/.gvimrc.local"))
