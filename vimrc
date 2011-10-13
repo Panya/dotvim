@@ -7,18 +7,18 @@ set noswapfile
 call pathogen#infect()
 call pathogen#helptags()
 
+" Colors
 if &t_Co > 2 || has("gui_running")
     syntax on
-    set t_Co=256
 endif
+set t_Co=256
+color jellybeans
 
+" Interface
 set number
 set ruler
 set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
 set cursorline
-
-" Default color scheme
-color jellybeans
 
 " Set encoding
 set encoding=utf-8
