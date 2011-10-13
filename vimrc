@@ -119,21 +119,11 @@ set splitright
 " Remapping mapleader
 let mapleader=','
 
-" NERDTree configuration
-let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
-map <Leader>n :NERDTreeToggle<CR>
+" gf in new tab
+nnoremap gf <c-w>gf
 
-" CtrlP configuration
-let g:ctrlp_persistent_input=0
-let g:ctrlp_split_window=1
-let g:ctrlp_working_path_mode=2
-let g:ctrlp_max_height=5
-
-" ZoomWin configuration
-map <Leader><Leader> :ZoomWin<CR>
-
-" GitGrep
-map <Leader>g :GitGrep<space>
+" be consistent with capitalized C and D commands which reach the end of line
+nnoremap Y y$
 
 " Clear trailing whitespaces
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
@@ -196,12 +186,6 @@ nmap <silent> <Leader>j :wincmd j<CR>
 nmap <silent> <Leader>l :wincmd l<CR>
 nmap <silent> <Leader>h :wincmd h<CR>
 
-" gf in new tab
-nnoremap gf <c-w>gf
-
-" be consistent with capitalized C and D commands which reach the end of line
-nnoremap Y y$
-
 " Remember last location in file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
@@ -241,6 +225,22 @@ au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
 " save on losing focus
 au FocusLost * :wa
+
+" NERDTree configuration
+let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
+map <Leader>n :NERDTreeToggle<CR>
+
+" CtrlP configuration
+let g:ctrlp_persistent_input=0
+let g:ctrlp_split_window=1
+let g:ctrlp_working_path_mode=2
+let g:ctrlp_max_height=5
+
+" ZoomWin configuration
+map <Leader><Leader> :ZoomWin<CR>
+
+" GitGrep
+map <Leader>g :GitGrep<space>
 
 " Enable syntastic syntax checking
 let g:syntastic_enable_signs=1
