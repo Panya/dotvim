@@ -12,7 +12,12 @@ if &t_Co > 2 || has("gui_running")
     syntax on
 endif
 set t_Co=256
-color jellybeans
+color mustang
+
+hi CursorLine cterm=none
+hi Visual ctermbg=237
+hi NonText ctermbg=none guibg=#202020
+hi SpecialKey ctermbg=none guibg=#202020
 
 " Interface
 set number
