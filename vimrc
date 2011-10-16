@@ -231,6 +231,13 @@ au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 " save on losing focus
 au FocusLost * :wa
 
+" Enable omni completion
+au FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+au FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+au FileType python setlocal omnifunc=pythoncomplete#Complete
+au FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+au FileType css set omnifunc=csscomplete#CompleteCSS
+
 " NERDTree configuration
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
@@ -250,6 +257,9 @@ map <Leader>g :GitGrep<space>
 " Enable syntastic syntax checking
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_warnings=1
+
+" SuperTab
+let g:SuperTabDefaultCompletionType = 'context'
 
 " gist-vim defaults
 if has("mac")
