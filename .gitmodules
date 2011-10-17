@@ -73,3 +73,6 @@
 [submodule "bundle/color-schemes"]
 	path = bundle/color-schemes
 	url = git://github.com/flazz/vim-colorschemes.git
+[submodule "bundle/argtextobj"]
+	path = bundle/argtextobj
+	url = git://github.com/vim-scripts/argtextobj.vim.git

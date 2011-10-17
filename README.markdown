@@ -55,10 +55,11 @@ Here's some tips if you've never used VIM before:
 * [align](https://github.com/tsaleh/vim-align)
 * [unimpaired](https://github.com/tpope/vim-unimpaired)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
-* [syntastic](https://github.com/scrooloose/syntastic)
+* [syntastic](https://github.com/mogren/syntastic)
 * [gist](https://github.com/mattn/gist-vim)
 * [zencoding](https://github.com/mattn/zencoding-vim)
 * [xml](https://github.com/othree/xml.vim)
+* [argtextobj](https://github.com/vim-scripts/argtextobj.vim)
 
 ## Syntax files
 
