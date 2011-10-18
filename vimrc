@@ -4,6 +4,7 @@ set nobackup
 set noswapfile
 
 " Pathogen init
+runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -136,7 +137,7 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 " Pasting
 nmap ]p p=`]
 nmap ]P P=`[
-nmap <leader>p :set invpaste<CR>
+nmap <silent> <leader>p :set invpaste<CR>
 
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
