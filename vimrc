@@ -192,6 +192,9 @@ nmap <silent> <Leader>j :wincmd j<CR>
 nmap <silent> <Leader>l :wincmd l<CR>
 nmap <silent> <Leader>h :wincmd h<CR>
 
+" Open vertical split
+nnoremap <silent> <Leader>w :vsplit<CR>
+
 " Remember last location in file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
