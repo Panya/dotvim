@@ -41,7 +41,7 @@ Here's some tips if you've never used VIM before:
 
 * [GitGrep.vim](https://github.com/tjennings/git-grep-vim)
 * [CtrlP](https://github.com/kien/ctrlp.vim)
-* [Color sampler pack](https://github.com/vim-scripts/Color-Sampler-Pack)
+* [Color schemes](https://github.com/flazz/vim-colorschemes)
 * [fugitive](https://github.com/tpope/vim-fugitive)
 * [git](https://github.com/tpope/vim-git)
 * [NerdTree](https://github.com/wycats/nerdtree)
