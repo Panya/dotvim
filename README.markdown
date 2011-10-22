@@ -60,6 +60,8 @@ Here's some tips if you've never used VIM before:
 * [zencoding](https://github.com/mattn/zencoding-vim)
 * [xml](https://github.com/othree/xml.vim)
 * [argtextobj](https://github.com/vim-scripts/argtextobj.vim)
+* [vimproc](https://github.com/Shougo/vimproc)
+* [vimshell](https://github.com/Shougo/vimshell)
 
 ## Syntax files
 
