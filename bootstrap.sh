@@ -18,6 +18,7 @@ if [[ $PLATFORM == 'Linux' || $PLATFORM == 'FreeBSD' ]]; then
 elif [[ $PLATFORM == 'Darwin' ]]; then
     make -f make_mac.mak
 fi
+cd ../..
 
 # Add links to vimrc and gvimrc
 for i in vimrc gvimrc; do ln -s $VIM_DIR/$i ~/.$i; done
