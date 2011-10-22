@@ -79,3 +79,9 @@
 [submodule "bundle/pathogen"]
 	path = bundle/pathogen
 	url = git://github.com/tpope/vim-pathogen.git
+[submodule "bundle/vimproc"]
+	path = bundle/vimproc
+	url = git://github.com/Shougo/vimproc.git
+[submodule "bundle/vimshell"]
+	path = bundle/vimshell
+	url = git://github.com/Shougo/vimshell.git
