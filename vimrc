@@ -196,7 +196,7 @@ nmap <silent> <Leader>h :wincmd h<CR>
 nnoremap <silent> <Leader>w :vsplit<CR>
 
 " Open VimShell in vertical split
-nnoremap <silent> <Leader>s :vsplit<CR> :VimShell<CR>
+nnoremap <silent> <Leader>s :vsplit\|:VimShell<CR>
 
 " Remember last location in file
 if has("autocmd")
