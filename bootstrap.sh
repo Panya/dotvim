@@ -11,15 +11,6 @@ cd $VIM_DIR
 # Update Pathogen bundle
 git submodule init; git submodule update
 
-# Build vimproc
-cd bundle/vimproc
-if [[ $PLATFORM == 'Linux' || $PLATFORM == 'FreeBSD' ]]; then
-    make -f make_gcc.mak
-elif [[ $PLATFORM == 'Darwin' ]]; then
-    make -f make_mac.mak
-fi
-cd ../..
-
 # Add links to vimrc and gvimrc
 for i in vimrc gvimrc; do ln -s $VIM_DIR/$i ~/.$i; done
 
