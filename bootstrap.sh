@@ -1,5 +1,4 @@
 VIM_DIR=~/.vim
-PLATFORM=`uname`
 
 # Backup old .vim
 for i in $VIM_DIR ~/.vimrc ~/.gvimrc; do [ -e $i ] && mv $i $i.old; done
