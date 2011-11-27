@@ -151,15 +151,6 @@ map <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
-" Unimpaired configuration
-" Bubble single lines
-nmap <C-Up> [e
-nmap <C-Down> ]e
-
-" Bubble multiple lines
-vmap <C-Up> [egv
-vmap <C-Down> ]egv
-
 " Leader-t to CtrlP and Leader-tb to CtrlP buffers mode
 map <Leader>t :CtrlP<CR>
 map <Leader>tb :CtrlPBuffer<CR>
@@ -243,9 +234,6 @@ let g:ctrlp_max_height=5
 
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
-
-" GitGrep
-map <Leader>g :GitGrep<space>
 
 " gist-vim defaults
 if has("mac")

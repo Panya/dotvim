@@ -39,7 +39,6 @@ Here's some tips if you've never used VIM before:
 
 ## Installed plugins
 
-* [GitGrep.vim](https://github.com/tjennings/git-grep-vim)
 * [CtrlP](https://github.com/kien/ctrlp.vim)
 * [Color schemes](https://github.com/flazz/vim-colorschemes)
 * [fugitive](https://github.com/tpope/vim-fugitive)
@@ -51,8 +50,6 @@ Here's some tips if you've never used VIM before:
 * [supertab](https://github.com/ervandew/supertab)
 * [ZoomWin](https://github.com/vim-scripts/ZoomWin)
 * [SnipMate](https://github.com/msanders/snipmate.vim)
-* [align](https://github.com/tsaleh/vim-align)
-* [unimpaired](https://github.com/tpope/vim-unimpaired)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
 * [gist](https://github.com/mattn/gist-vim)
 * [zencoding](https://github.com/mattn/zencoding-vim)
