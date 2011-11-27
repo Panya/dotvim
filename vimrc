@@ -235,10 +235,6 @@ au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 " save on losing focus
 au FocusLost * :wa
 
-" NERDTree configuration
-let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$']
-map <Leader>n :NERDTreeToggle<CR>
-
 " CtrlP configuration
 let g:ctrlp_persistent_input=0
 let g:ctrlp_split_window=1

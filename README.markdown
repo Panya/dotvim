@@ -44,7 +44,6 @@ Here's some tips if you've never used VIM before:
 * [Color schemes](https://github.com/flazz/vim-colorschemes)
 * [fugitive](https://github.com/tpope/vim-fugitive)
 * [git](https://github.com/tpope/vim-git)
-* [NerdTree](https://github.com/wycats/nerdtree)
 * [TComment](https://github.com/vim-scripts/tComment)
 * [surround](https://github.com/tpope/vim-surround)
 * [repeat](https://github.com/tpope/vim-repeat)
