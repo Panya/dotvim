@@ -86,3 +86,11 @@
 	path = bundle/pathogen
 	url = git://github.com/tpope/vim-pathogen.git
 	ignore = dirty
+[submodule "bundle/vim-css3-syntax"]
+	path = bundle/vim-css3-syntax
+	url = git://github.com/hail2u/vim-css3-syntax.git
+	ignore = dirty
+[submodule "bundle/html5.vim"]
+	path = bundle/html5.vim
+	url = git://github.com/othree/html5.vim.git
+	ignore = dirty

@@ -58,6 +58,8 @@ Here's some tips if you've never used VIM before:
 ## Syntax files
 
 * [javascript](https://github.com/pangloss/vim-javascript)
+* [CSS3](https://github.com/hail2u/vim-css3-syntax)
+* [HTML5](https://github.com/othree/html5.vim)
 * [coffeescript](https://github.com/kchmck/vim-coffee-script)
 * [HAML](https://github.com/tpope/vim-haml)
 * [markdown](https://github.com/tpope/vim-markdown)
