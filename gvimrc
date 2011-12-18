@@ -12,9 +12,6 @@ if has("gui_macvim")
   " Command-Return for fullscreen
   macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
 
-  " Command-Shift-F for GitGrep
-  map <D-F> :GitGrep<space>
-
   " Command-/ to toggle comments
   map <D-/> :TComment<CR>
   imap <D-/> <Esc>:TComment<CR>i
