@@ -266,8 +266,3 @@ function! SmartIndent()
 endfunction
 
 imap <CR> <C-R>=SmartIndent()<CR>
-
-" Include user's local vim config
-if filereadable(expand("~/.vimrc.local"))
-  source ~/.vimrc.local
-endif
