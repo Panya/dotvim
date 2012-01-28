@@ -139,6 +139,10 @@ nmap ]p p=`]
 nmap ]P P=`[
 nmap <silent> <leader>p :set invpaste<CR>
 
+" Remapping H and L for something usefull
+nmap H ^
+nmap L g_
+
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
