@@ -74,10 +74,6 @@
 	path = snippets
 	url = git://github.com/Panya/snipmate-snippets.git
 	ignore = dirty
-[submodule "bundle/color-schemes"]
-	path = bundle/color-schemes
-	url = git://github.com/flazz/vim-colorschemes.git
-	ignore = dirty
 [submodule "bundle/argtextobj"]
 	path = bundle/argtextobj
 	url = git://github.com/vim-scripts/argtextobj.vim.git
@@ -93,4 +89,8 @@
 [submodule "bundle/html5.vim"]
 	path = bundle/html5.vim
 	url = git://github.com/othree/html5.vim.git
+	ignore = dirty
+[submodule "bundle/Hemisu"]
+	path = bundle/Hemisu
+	url = git://github.com/noahfrederick/Hemisu.git
 	ignore = dirty
