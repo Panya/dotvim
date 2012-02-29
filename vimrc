@@ -14,8 +14,7 @@ if &t_Co > 2 || has("gui_running")
 endif
 set t_Co=256
 set background=dark
-color hemisu
-hi LineNr ctermfg=244 guifg=#dddddd
+color jellybeans
 
 " Interface
 set number

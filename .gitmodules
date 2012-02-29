@@ -90,7 +90,7 @@
 	path = bundle/html5.vim
 	url = git://github.com/othree/html5.vim.git
 	ignore = dirty
-[submodule "bundle/Hemisu"]
-	path = bundle/Hemisu
-	url = git://github.com/noahfrederick/Hemisu.git
+[submodule "bundle/jellybeans"]
+	path = bundle/jellybeans
+	url = git://github.com/nanotech/jellybeans.vim.git
 	ignore = dirty

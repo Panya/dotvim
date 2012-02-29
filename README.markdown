@@ -39,7 +39,7 @@ Here's some tips if you've never used VIM before:
 ## Installed plugins
 
 * [CtrlP](https://github.com/kien/ctrlp.vim)
-* [Hemisu color scheme](https://github.com/noahfrederick/Hemisu)
+* [jellybeans color scheme](https://github.com/nanotech/jellybeans.vim)
 * [fugitive](https://github.com/tpope/vim-fugitive)
 * [git](https://github.com/tpope/vim-git)
 * [TComment](https://github.com/vim-scripts/tComment)
