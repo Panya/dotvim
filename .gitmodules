@@ -26,10 +26,6 @@
 	path = bundle/repeat
 	url = git://github.com/tpope/vim-repeat.git
 	ignore = dirty
-[submodule "bundle/matchit"]
-	path = bundle/matchit
-	url = git://github.com/mirell/vim-matchit.git
-	ignore = dirty
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
@@ -93,4 +89,12 @@
 [submodule "bundle/jellybeans"]
 	path = bundle/jellybeans
 	url = git://github.com/nanotech/jellybeans.vim.git
+	ignore = dirty
+[submodule "bundle/vim-yate"]
+	path = bundle/vim-yate
+	url = git://github.com/maksimr/vim-yate.git
+	ignore = dirty
+[submodule "bundle/vim-stylus"]
+	path = bundle/vim-stylus
+	url = git://github.com/wavded/vim-stylus.git
 	ignore = dirty
