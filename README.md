@@ -39,13 +39,12 @@ Here's some tips if you've never used VIM before:
 ## Installed plugins
 
 * [CtrlP](https://github.com/kien/ctrlp.vim)
-* [jellybeans color scheme](https://github.com/nanotech/jellybeans.vim)
+* [hybrid color scheme](https://github.com/w0ng/vim-hybrid)
 * [fugitive](https://github.com/tpope/vim-fugitive)
 * [git](https://github.com/tpope/vim-git)
 * [TComment](https://github.com/vim-scripts/tComment)
 * [surround](https://github.com/tpope/vim-surround)
 * [repeat](https://github.com/tpope/vim-repeat)
-* [MatchIt](https://github.com/mirell/vim-matchit)
 * [supertab](https://github.com/ervandew/supertab)
 * [ZoomWin](https://github.com/vim-scripts/ZoomWin)
 * [SnipMate](https://github.com/msanders/snipmate.vim)
@@ -58,6 +57,8 @@ Here's some tips if you've never used VIM before:
 ## Syntax files
 
 * [javascript](https://github.com/pangloss/vim-javascript)
+* [YATE](https://github.com/maksimr/vim-yate)
+* [stylus](https://github.com/wavded/vim-stylus)
 * [CSS3](https://github.com/hail2u/vim-css3-syntax)
 * [HTML5](https://github.com/othree/html5.vim)
 * [coffeescript](https://github.com/kchmck/vim-coffee-script)

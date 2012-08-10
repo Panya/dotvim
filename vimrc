@@ -14,7 +14,7 @@ if &t_Co > 2 || has("gui_running")
 endif
 set t_Co=256
 set background=dark
-color jellybeans
+color hybrid
 
 " Interface
 set number
@@ -252,9 +252,6 @@ let g:gist_open_browser_after_post = 1
 
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 let macvim_hig_shift_movement = 1
-
-" % to bounce from do to end etc.
-runtime! macros/matchit.vim
 
 " ZenCoding
 let g:user_zen_expandabbr_key = '<c-e>'
