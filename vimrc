@@ -229,6 +229,9 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
+" R scripts
+au BufRead,BufNewFile *.r set ft=r
+
 " save on losing focus
 au FocusLost * :wa
 
