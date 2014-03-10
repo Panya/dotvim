@@ -98,3 +98,7 @@
 	path = bundle/vim-hybrid
 	url = git://github.com/w0ng/vim-hybrid.git
 	ignore = dirty
+[submodule "bundle/wildfire.vim"]
+	path = bundle/wildfire.vim
+	url = git://github.com/gcmt/wildfire.vim.git
+	ignore = dirty
