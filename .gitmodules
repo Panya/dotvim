@@ -54,9 +54,9 @@
 	path = bundle/gist
 	url = git://github.com/mattn/gist-vim.git
 	ignore = dirty
-[submodule "bundle/zencoding"]
-	path = bundle/zencoding
-	url = git://github.com/mattn/zencoding-vim.git
+[submodule "bundle/emmet"]
+	path = bundle/emmet
+	url = git://github.com/mattn/emmet-vim.git
 	ignore = dirty
 [submodule "bundle/xml"]
 	path = bundle/xml

@@ -256,9 +256,10 @@ let g:gist_open_browser_after_post = 1
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 let macvim_hig_shift_movement = 1
 
-" ZenCoding
-let g:user_zen_expandabbr_key = '<c-e>'
-let g:use_zen_complete_tag = 1
+" emmet
+let g:user_emmet_install_global = 0
+let g:user_emmet_leader_key='<c-e>'
+autocmd FileType html,xslt,yate,css EmmetInstall
 
 " delimitMate indentation
 let delimitMate_expand_cr = 1

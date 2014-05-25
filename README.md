@@ -50,7 +50,7 @@ Here's some tips if you've never used VIM before:
 * [SnipMate](https://github.com/msanders/snipmate.vim)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
 * [gist](https://github.com/mattn/gist-vim)
-* [zencoding](https://github.com/mattn/zencoding-vim)
+* [emmet](https://github.com/mattn/emmet-vim)
 * [xml](https://github.com/othree/xml.vim)
 * [argtextobj](https://github.com/vim-scripts/argtextobj.vim)
 * [Wildfire](https://github.com/gcmt/wildfire.vim)
