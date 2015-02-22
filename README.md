@@ -4,7 +4,7 @@ Now on Pathogen.
 
 ## Installation
 
-`curl https://raw.github.com/Panya/dotvim/master/bootstrap.sh -o - | sh`
+`curl https://raw.githubusercontent.com/Panya/dotvim/master/bootstrap.sh -o - | sh`
 
 ## Updating to the latest version
 
