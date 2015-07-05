@@ -12,6 +12,12 @@ call pathogen#helptags()
 if &t_Co > 2 || has("gui_running")
     syntax on
 endif
+
+" Tmux
+if exists('$TMUX')
+    set term=screen-256color
+endif
+
 set t_Co=256
 set background=dark
 color hybrid
