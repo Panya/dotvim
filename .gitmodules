@@ -10,10 +10,6 @@
 	path = bundle/git
 	url = git://github.com/tpope/vim-git.git
 	ignore = dirty
-[submodule "bundle/haml"]
-	path = bundle/haml
-	url = git://github.com/tpope/vim-haml.git
-	ignore = dirty
 [submodule "bundle/javascript"]
 	path = bundle/javascript
 	url = git://github.com/pangloss/vim-javascript.git
@@ -45,10 +41,6 @@
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = git://github.com/Raimondi/delimitMate.git
-	ignore = dirty
-[submodule "bundle/coffeescript"]
-	path = bundle/coffeescript
-	url = git://github.com/kchmck/vim-coffee-script.git
 	ignore = dirty
 [submodule "bundle/gist"]
 	path = bundle/gist
