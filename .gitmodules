@@ -32,7 +32,7 @@
 	ignore = dirty
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
+	url = git://github.com/garbas/vim-snipmate.git
 	ignore = dirty
 [submodule "bundle/markdown"]
 	path = bundle/markdown
@@ -93,4 +93,12 @@
 [submodule "bundle/wildfire.vim"]
 	path = bundle/wildfire.vim
 	url = git://github.com/gcmt/wildfire.vim.git
+	ignore = dirty
+[submodule "bundle/tlib_vim"]
+	path = bundle/tlib_vim
+	url = git://github.com/tomtom/tlib_vim.git
+    ignore = dirty
+[submodule "bundle/vim-addon-mw-utils"]
+	path = bundle/vim-addon-mw-utils
+	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
 	ignore = dirty
