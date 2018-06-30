@@ -43,6 +43,7 @@ if has('nvim')
       \ }
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'wokalski/autocomplete-flow'
+  Plug 'eagletmt/neco-ghc'
   Plug 'Shougo/neosnippet'
   Plug 'Shougo/neosnippet-snippets'
   Plug 'w0rp/ale'
@@ -338,6 +339,7 @@ if has('nvim')
   nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
   let g:LanguageClient_serverCommands = {
-    \ 'javascript': ['flow-language-server', '--stdio']
+    \ 'javascript': ['flow-language-server', '--stdio'],
+    \ 'purescript': ['purescript-language-server', '--stdio']
     \ }
 endif
