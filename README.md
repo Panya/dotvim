@@ -1,14 +1,10 @@
 # Panya's vim Distribution
 
-Now on Pathogen.
+Now on vim-plug.
 
 ## Installation
 
 `curl https://raw.githubusercontent.com/Panya/dotvim/master/bootstrap.sh -o - | sh`
-
-## Updating to the latest version
-
-To update to the latest version of the distribution, just run `git pull --rebase; git submodule update; git submodule foreach git pull origin master` inside your `~/.vim` directory.
 
 # Intro to VIM
 
@@ -35,31 +31,3 @@ Here's some tips if you've never used VIM before:
 * `gcc` to comment/uncomment
 * `,t` to CtrlP (like TextMate Command-T)
 * Keyboard [cheat sheet](http://walking-without-crutches.heroku.com/image/images/vi-vim-cheat-sheet.png).
-
-## Installed plugins
-
-* [CtrlP](https://github.com/kien/ctrlp.vim)
-* [hybrid color scheme](https://github.com/w0ng/vim-hybrid)
-* [fugitive](https://github.com/tpope/vim-fugitive)
-* [git](https://github.com/tpope/vim-git)
-* [TComment](https://github.com/vim-scripts/tComment)
-* [surround](https://github.com/tpope/vim-surround)
-* [repeat](https://github.com/tpope/vim-repeat)
-* [supertab](https://github.com/ervandew/supertab)
-* [ZoomWin](https://github.com/vim-scripts/ZoomWin)
-* [SnipMate](https://github.com/msanders/snipmate.vim)
-* [delimitMate](https://github.com/Raimondi/delimitMate)
-* [gist](https://github.com/mattn/gist-vim)
-* [emmet](https://github.com/mattn/emmet-vim)
-* [xml](https://github.com/othree/xml.vim)
-* [argtextobj](https://github.com/vim-scripts/argtextobj.vim)
-* [Wildfire](https://github.com/gcmt/wildfire.vim)
-
-## Syntax files
-
-* [javascript](https://github.com/pangloss/vim-javascript)
-* [YATE](https://github.com/maksimr/vim-yate)
-* [stylus](https://github.com/wavded/vim-stylus)
-* [CSS3](https://github.com/hail2u/vim-css3-syntax)
-* [HTML5](https://github.com/othree/html5.vim)
-* [markdown](https://github.com/tpope/vim-markdown)

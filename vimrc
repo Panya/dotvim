@@ -3,10 +3,54 @@ set autoread
 set nobackup
 set noswapfile
 
-" Pathogen init
-runtime bundle/pathogen/autoload/pathogen.vim
-call pathogen#infect()
-call pathogen#helptags()
+" vim-plug init
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/bundle')
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-git'
+Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'ervandew/supertab'
+Plug 'tpope/vim-markdown'
+Plug 'mattn/gist-vim'
+Plug 'othree/xml.vim'
+Plug 'vim-scripts/tComment'
+Plug 'vim-scripts/argtextobj.vim'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'othree/html5.vim'
+Plug 'wavded/vim-stylus'
+Plug 'w0ng/vim-hybrid'
+Plug 'tomtom/tlib_vim'
+Plug 'gcmt/wildfire.vim'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'elmcast/elm-vim'
+Plug 'purescript-contrib/purescript-vim'
+Plug 'scrooloose/nerdtree'
+Plug 'wellle/targets.vim'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'Raimondi/delimitMate'
+
+if has('nvim')
+  Plug 'autozimu/LanguageClient-neovim', {
+      \ 'branch': 'next',
+      \ 'do': 'bash install.sh',
+      \ }
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'wokalski/autocomplete-flow'
+  Plug 'Shougo/neosnippet'
+  Plug 'Shougo/neosnippet-snippets'
+  Plug 'w0rp/ale'
+  Plug 'editorconfig/editorconfig-vim'
+  Plug 'reasonml-editor/vim-reason-plus'
+endif
+call plug#end()
 
 " Colors
 if &t_Co > 2 || has("gui_running")
@@ -41,9 +85,9 @@ set lazyredraw
 
 " Whitespace stuff
 set nowrap
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set smarttab
 
@@ -93,9 +137,9 @@ set ttyfast
 
 " Status bar
 set laststatus=2
-set statusline=\ %{HasPaste()}%<%-15.25(%f%)%m%r%h\ %w\ \ 
-set statusline+=\ \ \ [%{&ff}/%Y]%=file=%{&fileencoding}\ enc=%{&encoding}\ 
-set statusline+=\ \ \ %<%20.30(%{hostname()}:%{CurDir()}%)\ 
+set statusline=\ %{HasPaste()}%<%-15.25(%f%)%m%r%h\ %w\ \
+set statusline+=\ \ \ [%{&ff}/%Y]%=file=%{&fileencoding}\ enc=%{&encoding}\
+set statusline+=\ \ \ %<%20.30(%{hostname()}:%{CurDir()}%)\
 set statusline+=\ \ \ %=%-10.(%l,%c%V%)\ %p%%/%L
 
 fun! CurDir()
@@ -222,7 +266,7 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set f
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 
 " add json syntax highlighting
-au BufNewFile,BufRead *.json set ft=javascript
+au BufNewFile,BufRead *.json set ft=json
 
 " add jsx syntax highlighting
 au BufNewFile,BufRead *.jsx set ft=javascript
@@ -247,8 +291,8 @@ let g:ctrlp_split_window=1
 let g:ctrlp_working_path_mode=2
 let g:ctrlp_max_height=5
 
-" ZoomWin configuration
-map <Leader><Leader> :ZoomWin<CR>
+" NERDTree configuration
+map <Leader><Leader> :NERDTreeToggle<CR>
 
 " gist-vim defaults
 if has("mac")
@@ -262,11 +306,6 @@ let g:gist_open_browser_after_post = 1
 " MacVIM shift+arrow-keys behavior (required in .vimrc)
 let macvim_hig_shift_movement = 1
 
-" emmet
-let g:user_emmet_install_global = 0
-let g:user_emmet_leader_key='<c-e>'
-autocmd FileType html,xslt,yate,css EmmetInstall
-
 " delimitMate indentation
 let delimitMate_expand_cr = 1
 
@@ -279,3 +318,9 @@ function! SmartIndent()
 endfunction
 
 imap <CR> <C-R>=SmartIndent()<CR>
+
+" deoplete
+let g:deoplete#enable_at_startup = 1
+
+" neosnippet
+let g:neosnippet#enable_completed_snippet = 1
