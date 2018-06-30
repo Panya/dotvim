@@ -17,7 +17,6 @@ Plug 'tpope/vim-git'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'ervandew/supertab'
 Plug 'tpope/vim-markdown'
 Plug 'mattn/gist-vim'
 Plug 'othree/xml.vim'
@@ -49,6 +48,8 @@ if has('nvim')
   Plug 'w0rp/ale'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'reasonml-editor/vim-reason-plus'
+else
+  Plug 'ervandew/supertab'
 endif
 call plug#end()
 
@@ -319,18 +320,24 @@ endfunction
 
 imap <CR> <C-R>=SmartIndent()<CR>
 
-" deoplete
-let g:deoplete#enable_at_startup = 1
+if has('nvim')
+  " deoplete
+  let g:deoplete#enable_at_startup = 1
 
-" neosnippet
-let g:neosnippet#enable_completed_snippet = 1
+  " neosnippet
+  let g:neosnippet#enable_completed_snippet = 1
+  imap <expr><TAB>
+    \ neosnippet#expandable_or_jumpable() ?
+    \    "\<Plug>(neosnippet_expand_or_jump)" :
+    \    pumvisible() ? "\<C-n>" : "\<TAB>"
 
-" LanguageClient-neovim
-nnoremap <F5> :call LanguageClient_contextMenu()<CR>
-nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
-nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+  " LanguageClient-neovim
+  nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+  nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+  nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+  nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
-let g:LanguageClient_serverCommands = {
+  let g:LanguageClient_serverCommands = {
     \ 'javascript': ['flow-language-server', '--stdio']
     \ }
+endif
