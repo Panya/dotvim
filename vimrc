@@ -39,7 +39,7 @@ Plug 'Raimondi/delimitMate'
 if has('nvim')
   Plug 'autozimu/LanguageClient-neovim', {
       \ 'branch': 'next',
-      \ 'do': 'bash install.sh',
+      \ 'do': 'bash install.sh; npm install -g flow-language-server purescript-language-server',
       \ }
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'wokalski/autocomplete-flow'
