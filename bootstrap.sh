@@ -15,6 +15,8 @@ for i in vimrc gvimrc; do ln -s $VIM_DIR/$i ~/.$i; done
 git clean -fd
 
 # Add nvim config
+if [ ! -e $NVIM_DIR ]; then mkdir -p $NVIM_DIR; fi
+
 if [ ! -f "$NVIM_DIR/init.vim" ]; then
   printf "set runtimepath^=$VIM_DIR runtimepath+=$VIM_DIR/after\nlet &packpath = &runtimepath\nsource ~/.vimrc" > $NVIM_DIR/init.vim
 fi
