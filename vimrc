@@ -39,7 +39,7 @@ Plug 'Raimondi/delimitMate'
 if has('nvim')
   Plug 'autozimu/LanguageClient-neovim', {
       \ 'branch': 'next',
-      \ 'do': 'bash install.sh; npm install -g flow-language-server purescript-language-server',
+      \ 'do': 'bash install.sh; npm install -g flow-bin purescript-language-server',
       \ }
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'wokalski/autocomplete-flow'
@@ -341,7 +341,7 @@ if has('nvim')
   nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
   let g:LanguageClient_serverCommands = {
-    \ 'javascript': ['flow-language-server', '--stdio'],
+    \ 'javascript': ['flow', 'lsp'],
     \ 'purescript': ['purescript-language-server', '--stdio']
     \ }
 endif
