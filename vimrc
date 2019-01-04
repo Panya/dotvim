@@ -344,4 +344,7 @@ if has('nvim')
     \ 'javascript': ['flow', 'lsp'],
     \ 'purescript': ['purescript-language-server', '--stdio']
     \ }
+  
+  " Ale
+  let b:ale_linter_aliases = ['javascript', 'html']
 endif
