@@ -346,5 +346,5 @@ if has('nvim')
     \ }
   
   " Ale
-  let b:ale_linter_aliases = ['javascript', 'html']
+  let b:ale_linter_aliases = {'html': 'javascript'}
 endif
