@@ -34,6 +34,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'wellle/targets.vim'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'Raimondi/delimitMate'
+Plug 'burner/vim-svelte'
 
 if has('nvim')
   Plug 'autozimu/LanguageClient-neovim', {
